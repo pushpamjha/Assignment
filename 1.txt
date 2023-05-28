@@ -230,7 +230,7 @@ void moveZeroes(vector<int>& nums) {
 
 
 Q8.
-    int findDuplicate(vector<int>& nums) {
+    vector<int> findDuplicate(vector<int>& nums) {
         int n=nums.size(),sum=0,x;
         for(int i=0;i<n;i++)
         {
@@ -257,6 +257,5 @@ Q8.
         int s=n*(n+1)/2;
         sum-=x;
         ans.push_back(s-sum);
-        cout<<ans[0]<<ans[1];
-        return -1;
+        return ans;
     }
